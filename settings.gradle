@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'stop-waterlogging'
+rootProject.name = 'better-fluid-placement'
