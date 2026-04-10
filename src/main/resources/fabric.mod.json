@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "stop-waterlogging",
+	"id": "better-fluid-placement",
 	"version": "${version}",
-	"name": "Stop Waterlogging",
-	"description": "A simple mod that allows to cancel waterlogging when pressing SHIFT!",
+	"name": "Better Fluid Placement",
+	"description": "A small mod that lets you control if fluids should be placed inside a block or next to it by sneaking.",
 	"authors": [
 		"Hanthom"
 	],
@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"de.hanthom.StopWaterlogging"
+			"de.hanthom.BetterFluidPlacement"
 		]
 	},
 	"mixins": [
-		"stop-waterlogging.mixins.json"
+		"better-fluid-placement.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
