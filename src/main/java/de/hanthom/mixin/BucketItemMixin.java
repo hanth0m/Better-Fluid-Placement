@@ -28,7 +28,7 @@ public abstract class BucketItemMixin implements BucketItemAccessorMixin {
 			}
 		} else if (!user.isShiftKeyDown() && (world.getBlockState(hitResult.getBlockPos()).is(BlockTags.SMALL_FLOWERS)
 				|| world.getBlockState(hitResult.getBlockPos()).is(BlockTags.SAPLINGS)
-				|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.SHORT_GRASS //|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.BUSH
+				|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.GRASS //|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.BUSH
 				|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.DEAD_BUSH //|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.LEAF_LITTER
 				|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.FERN
 				|| world.getBlockState(hitResult.getBlockPos()).getBlock() == Blocks.PINK_PETALS
