@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "stop-waterlogging",
+	"version": "${version}",
+	"name": "Stop Waterlogging",
+	"description": "A simple mod that allows to cancel waterlogging when pressing SHIFT!",
+	"authors": [
+		"Hanthom"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stop-waterlogging/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.hanthom.StopWaterlogging"
+		]
+	},
+	"mixins": [
+		"stop-waterlogging.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ">= 1.20.5",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
