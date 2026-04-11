@@ -23,7 +23,7 @@ public abstract class BucketItemMixin {
 	@Final
 	private Fluid content;
 
-	@ModifyArgs(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/BucketItem;emptyContents(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/BlockHitResult;)Z"))
+	@ModifyArgs(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/BucketItem;emptyBucket(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/BlockHitResult;)Z"))
 	private void cancelWaterLogs(Args args) {
 		LivingEntity user = args.get(0);
 		Level world = args.get(1);
